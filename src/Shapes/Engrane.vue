@@ -27,7 +27,7 @@ export default {
 <style lang="sass" scoped>
 .Engrane
   position: relative
-  height: 90%
+  flex: 1
   // border: 1px solid red
   margin: 0 10%
 

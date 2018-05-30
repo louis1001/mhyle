@@ -8,22 +8,14 @@
         <h1 class="TitleLogo">MHYLE</h1>
       </div>
       <div class="ControlBtHome">
-        <input
-          type="button"
-          value="INICIAR" 
-          @click="undefined">
-        <input
-          type="button"
-          value="EXTRA" 
-          @click="undefined">
-        <input
-          type="button"
-          value="OPCIONES" 
-          @click="undefined">
-        <input
-          type="button"
-          value="SALIR" 
-          @click="undefined">
+        <router-link
+          to="/menu">Iniciar</router-link>
+        <router-link
+          to="/">Extra</router-link>
+        <router-link
+          to="/">Opciones</router-link>
+        <router-link
+          to="/">Salir</router-link>
       </div>
     </div>
   </div>
@@ -63,32 +55,40 @@ export default {
     width: 100%
     max-width: 800px
     height: 70%
-    // background: white
 
     .Logo
-      height: 70%
+      height: 500px
       padding: 10px
-      // border-bottom: 1px solid gray
+      display: flex
+      align-items: stretch
+      flex-direction: column
     
-    .TitleLogo
-      color: #474747
-      padding-top: 10px
-      font-size: 2.3rem
+      .TitleLogo
+        color: #474747
+        padding-top: 10px
+        font-size: 2.3rem
 
+      @media (max-aspect-ratio: 2/1)
+        border: 2px solid red
 
-    // .ControlBtHome
-    //   width: 100%
-    //   display: flex
-    //   justify-content: space-evenly
+    .ControlBtHome
+      display: flex
+      justify-content: center
 
-    //   input 
-    //     border: none
-    //     background-color: #474747
-    //     color: white
-    //     font-weight: bold
-    //     font-size: 1rem
+      a
+        cursor: pointer
+        flex-grow: 1
+        flex-basis: 0
+        padding: 6px 10px 
+        border: none
+        margin: 0 1%
+        background-color: #474747
+        color: white
+        font-weight: bold
+        font-size: 1rem
+        text-transform: uppercase
 
-    //     &:hover
-    //       opacity: 0.8
+        &:hover
+          opacity: 0.8
 
 </style>

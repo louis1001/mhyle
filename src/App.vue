@@ -47,6 +47,9 @@ a.btn
   text-align: center
   color: #2c3e50
 
+  a
+    text-decoration: none
+
   h1
     margin: 0
     line-height: 2
