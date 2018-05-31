@@ -29,6 +29,7 @@ export default {
   position: relative
   flex: 1
   // border: 1px solid red
+  min-height: 100px
   margin: 0 10%
 
   @media (max-width: 310px)

@@ -48,6 +48,9 @@ export default {
   justify-content: center
   align-items: center
 
+  @media (max-height: 400px)
+    overflow-y: auto
+
   .home-wrapper
     display: flex
     flex-direction: column
@@ -67,9 +70,6 @@ export default {
         color: #474747
         padding-top: 10px
         font-size: 2.3rem
-
-      @media (max-aspect-ratio: 2/1)
-        border: 2px solid red
 
     .ControlBtHome
       display: flex
