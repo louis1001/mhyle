@@ -1,8 +1,7 @@
 <template>
   <div id="app">
     <transition
-      name="bounce"
-      mode="out-in">
+      name="bounce">
       <router-view/>
 
     </transition>
@@ -55,39 +54,28 @@ a.btn
     line-height: 2
 
 .bounce-leave-active
-  animation: bounce-out 1.2s reverse
+  animation: bounce-out 1.2s
 
 
 .bounce-enter-active
-  animation: bounce-in 1.0s
+  animation: bounce-in 1.2s
 
 @keyframes bounce-out
   0%
-    transform: translateX(400px) scale(0)
-    opacity: 0
-
-  50%
-    transform: translateX(100px) scale(1.5)
-    opacity: 0.2
+    opacity: 1
 
   100%
-    transform: translateX(0px) scale(1)
-    opacity: 1
+    opacity: 0
 
 @keyframes bounce-in
   0%
-    transform: translateX(-400px) scale(0)
     opacity: 0
-
-  50%
-    transform: translateX(-100px) scale(1.5)
-    opacity: 0.2
-
-  90%
-    transform: scale(0.95)
+    top: 0
+    left: 0
 
   100%
-    transform: translateX(0px) scale(1)
     opacity: 1
+    top: 0
+    left: 0
 
 </style>
