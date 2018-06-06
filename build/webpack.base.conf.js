@@ -48,7 +48,7 @@ module.exports = {
       },
       {
         test: /\.s[a|c]ss$/,
-        loader: 'style!css!sass'
+        loader: 'style!css!sass?indentedSyntax'
       },
       {
         test: /\.js$/,

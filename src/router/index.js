@@ -65,8 +65,6 @@ function populateTree(layer, acumulator = {}, folderPath="", first=false){
 
 const routeTree = populateTree(sceneTree.tree, originalRoutes, sceneTree.rootDirPath, true)
 
-console.log(routeTree);
-
 routeTree.routes.push({
   path: '/menu',
   name: 'Menu',
@@ -80,7 +78,7 @@ routeTree.routes.push({
 
 Vue.use(Router)
 
-const router = new Router(routeTree)
+const router = new Router({routes: routeTree.routes, mode: "history"})
 
 router.tree = routeTree
 export default router

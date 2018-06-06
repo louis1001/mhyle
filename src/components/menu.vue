@@ -52,79 +52,79 @@ export default {
   }
 };
 </script>
-<style scoped>
-.Menu {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  background: white;
-}
-.EngraneA {
-  position: absolute;
-  width: 25vw;
-  bottom: -12.5vw;
-  left: -12.5vw;
-  z-index: 15;
-}
-.ControlLineTime {
-  position: absolute;
-  margin: 0;
-  margin-top: 65vh;
-  margin-left: 2%;
-  height: 5h;
-}
-.Profundidad {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  background: radial-gradient(rgba(255, 255, 255, 0) 20%, #353535 160%);
-  z-index: 12;
-}
-.ModulePrev {
-  position: relative;
-  width: 30%;
-  height: 20vh;
-  margin: 0;
-  margin-left: 32.5%;
-  margin-top: 15vh;
-}
-.IconModule {
-  width: 30%;
-  margin: 0 35%;
-  opacity: 0.9;
-}
-.IconLlave {
-  margin-top: -5%;
-}
-.MenuTitle {
-  position: absolute;
-  z-index: 20;
-  width: 30%;
-  margin: 0 35%;
-  height: 10vh;
-  margin-top: 20%;
-  /* color:#353535;*/
-}
-.TitleModule {
-  width: 60%;
-  /*  font-size: 2.5vw;
-    text-align: center;
-    float: left;
+<style lang="sass" scoped>
+.Menu
+  position: relative
+  width: 100vw
+  height: 100vh
+  overflow: hidden
+  background: white
+
+  .ControlLineTime 
+    position: absolute
+    margin: 0
+    margin-top: 65vh
+    margin-left: 2%
+    height: 5h
+
+  .EngraneA 
+    position: absolute
+    width: 200px
+    left: -100px
+    bottom: -100px
+    z-index: 15
+
+  .Profundidad 
+    position: absolute
+    width: 100vw
+    height: 100vh
+    background: radial-gradient(rgba(255, 255, 255, 0) 20%, #353535 160%)
+    z-index: 12
+
+  .ModulePrev 
+    position: relative
+    width: 30%
+    height: 20vh
+    margin: 0
+    margin-left: 32.5%
+    margin-top: 15vh
+
+  .IconModule 
+    width: 30%
+    margin: 0 35%
+    opacity: 0.9
+
+  .IconLlave 
+    margin-top: -5%
+
+  .MenuTitle 
+    position: absolute
+    z-index: 20
+    width: 30%
+    margin: 0 35%
+    height: 10vh
+    margin-top: 20%
+    /* color:#353535*/
+
+  .TitleModule 
+    width: 60%
+    /*  font-size: 2.5vw
+      text-align: center
+      float: left
+      
+      font-weight: bold*/
+
+  .SigBt 
+    width: 20%
+    /*text-decoration: none
+      font-size: 2.5vw
+      float: left
     
-    font-weight: bold;*/
-}
-.SigBt {
-  width: 20%;
-  /*text-decoration: none;
-    font-size: 2.5vw;
-    float: left;
-   
-    text-align: center;
-    margin: 5% 0;
-    color:#353535;*/
-}
-.SigBt > h1:hover {
-  /* color: white;*/
-}
+      text-align: center
+      margin: 5% 0
+      color:#353535*/
+
+  .SigBt > h1:hover 
+    /* color: white*/
+
 </style>

@@ -4,7 +4,7 @@
   <div class="Home">
     <div class="home-wrapper">
       <div class="Logo">
-        <Engrane/>
+        <Engrane class="engranaje-element"/>
         <h1 class="TitleLogo">MHYLE</h1>
       </div>
       <div class="ControlBtHome">
@@ -41,45 +41,44 @@ export default {
 
 .Home
   height: 100vh
-  padding: 0 10px
   overflow: hidden
   background: radial-gradient(white 20%, #353535 150%)
-  display: flex
-  justify-content: center
   align-items: center
 
-  @media (max-height: 400px)
-    overflow-y: auto
-
   .home-wrapper
-    display: flex
-    flex-direction: column
-    justify-content: space-between
-    width: 100%
     max-width: 800px
-    height: 70%
+    margin: auto
+    max-height: 100vh
 
     .Logo
-      height: 500px
-      padding: 10px
-      display: flex
-      align-items: stretch
-      flex-direction: column
-    
-      .TitleLogo
+      height: 90%
+
+      overflow: hidden
+
+      #app .TitleLogo
         color: #474747
-        padding-top: 10px
         font-size: 2.3rem
+        padding: 0
+        margin: 0
+        line-height: 1
+        height: 1em
+      
+      .engranaje-element
+        max-height: 400px
+        display: block
+        
 
     .ControlBtHome
       display: flex
       justify-content: center
 
+      height: 2rem
+
       a
         cursor: pointer
         flex-grow: 1
         flex-basis: 0
-        padding: 6px 10px 
+        padding: 10px 
         border: none
         margin: 0 1%
         background-color: #474747
